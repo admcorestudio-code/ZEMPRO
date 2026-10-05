@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Couleurs ZEMPRO : utilisables en classes Tailwind (bg-primary, text-accent, etc.) */
+@theme {
+  --color-primary: #48e57f;
+  --color-foreground: #fafafa;
+  --color-background: #0f1115;
+  --color-accent: #ffc400;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}

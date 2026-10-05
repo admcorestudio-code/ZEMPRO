@@ -244,3 +244,4 @@ npx supabase db push   # appliquer les migrations
 - Valide et assainis toutes les entrées côté serveur.
 - Limite le débit des routes publiques (inscription, envoi de messages) pour éviter les abus de SMS.
 - Le rôle d'un utilisateur ne doit jamais être modifiable depuis le client.
+@AGENTS.md
