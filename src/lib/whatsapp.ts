@@ -1,3 +1,6 @@
+/** Numéro WhatsApp officiel, remplaçable par NEXT_PUBLIC_WHATSAPP_NUMBER. */
+export const ZEMPRO_WHATSAPP_NUMBER = "+228 99 08 74 74";
+
 export const DEFAULT_WHATSAPP_MESSAGE =
   "Bonjour ZEMPRO, je veux faire nettoyer mon casque.";
 

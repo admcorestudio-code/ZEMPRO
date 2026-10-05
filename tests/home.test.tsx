@@ -28,6 +28,6 @@ test("les boutons WhatsApp pointent vers wa.me", () => {
   const links = screen.getAllByRole("link", { name: /WhatsApp/ });
   expect(links.length).toBeGreaterThanOrEqual(2);
   for (const link of links) {
-    expect(link.getAttribute("href")).toMatch(/^https:\/\/wa\.me\//);
+    expect(link.getAttribute("href")).toMatch(/^https:\/\/wa\.me\/22899087474\?text=/);
   }
 });

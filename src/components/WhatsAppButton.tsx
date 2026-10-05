@@ -1,4 +1,4 @@
-import { whatsappLink } from "@/lib/whatsapp";
+import { whatsappLink, ZEMPRO_WHATSAPP_NUMBER } from "@/lib/whatsapp";
 
 type Props = {
   label?: string;
@@ -14,7 +14,9 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 export function WhatsAppButton({ label = "Écrire sur WhatsApp", variant = "solid" }: Props) {
-  const href = whatsappLink(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER);
+  const href = whatsappLink(
+    process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || ZEMPRO_WHATSAPP_NUMBER,
+  );
 
   if (variant === "floating") {
     return (
